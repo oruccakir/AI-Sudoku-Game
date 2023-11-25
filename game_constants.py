@@ -34,4 +34,4 @@ YELLOW= (255, 255, 0)
 
 
 # initialize the square width, height
-SQUARE_WIDTH = 10
+SQUARE_WIDTH = 50
