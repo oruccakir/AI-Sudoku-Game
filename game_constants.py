@@ -31,3 +31,7 @@ SILVER= (192, 192, 192)
 TEAL= (0, 128, 128)
 WHITE= (255, 255, 255)
 YELLOW= (255, 255, 0)
+
+
+# initialize the square width, height
+SQUARE_WIDTH = 10
