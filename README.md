@@ -56,7 +56,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Special thanks to all the testers and contributors of this project.
 
 ## Contact
-If you have any questions, please email us at [oruccakir2525qgmail.com] or raise an issue within the repository.
+If you have any questions, please email us at [oruccakir2525@gmail.com] or raise an issue within the repository.
 
 Enjoy solving puzzles with AI-Sudoku!
 
