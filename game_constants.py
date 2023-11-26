@@ -34,4 +34,7 @@ YELLOW= (255, 255, 0)
 
 
 # initialize the square width, height
-SQUARE_WIDTH = 50
+SQUARE_WIDTH = 70
+
+# set the default game speed
+GAME_SPEED=800
