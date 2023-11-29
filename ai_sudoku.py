@@ -78,9 +78,20 @@ class AI_Sudoku_Game:
         y = self.y
         x1 = self.x
         y1 = self.y
+        x2 = self.x
+        y2 = self.y
+        x3 = self.x
+        y3 = self.y
         line_color = BLACK
         start_point1 = (x,y)
         end_point1 = (x + 9*SQUARE_WIDTH,y)
+        
+        start_point3 = (x2,y2)
+        end_point3 = (x2 + 9*SQUARE_WIDTH,y2)
+
+        start_point4 = (x3,y3)
+        end_point4 = (x3 + 9*SQUARE_WIDTH,y3)
+
         start_point2 = (x1,y1)
         end_point2 = (x1,y1+9*SQUARE_WIDTH)
 
@@ -94,7 +105,7 @@ class AI_Sudoku_Game:
             y+=SQUARE_WIDTH
             start_point1 = (x,y)
             end_point1 = (x + 9*SQUARE_WIDTH,y)
-        
+    
         pygame.draw.line(self.game_screen,line_color,start_point1,end_point1,5)
 
         for row in self.points:
@@ -145,8 +156,6 @@ class AI_Sudoku_Game:
         solution = sd.solveSudoku()
 
         printMatrix(solution)
-
-        print(len(self.solution_points))
         
         while self.RUNNING:
 
@@ -242,15 +251,15 @@ class AI_Sudoku_Game:
                 pygame.display.flip()
             
 sudoku_board = [
-    [0, 0, 0, 5, 0, 0, 3, 0, 0],
-    [0, 7, 0, 0, 3, 2, 0, 0, 5],
-    [0, 3, 0, 7, 6, 0, 0, 0, 9],
-    [0, 0, 0, 4, 0, 7, 0, 0, 8],
-    [0, 0, 0, 0, 0, 0, 0, 3, 0],
-    [2, 5, 0, 0, 0, 0, 9, 0, 7],
-    [7, 2, 0, 3, 0, 9, 5, 0, 0],
-    [8, 9, 0, 2, 0, 0, 0, 0, 0],
-    [0, 0, 5, 0, 0, 0, 0, 0, 6]
+    [9, 6, 0, 4, 0, 5, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 4, 0, 0],
+    [3, 7, 0, 0, 0, 0, 0, 0, 6],
+    [0, 3, 1, 6, 0, 0, 0, 0, 0],
+    [0, 0, 0, 8, 3, 0, 0, 0, 0],
+    [0, 0, 0, 0, 4, 0, 0, 0, 1],
+    [0, 0, 3, 2, 0, 0, 0, 0, 0],
+    [4, 0, 0, 0, 0, 0, 8, 0, 0],
+    [0, 1, 8, 0, 0, 6, 7, 5, 0]
 ]
 
 # You can use this list as the starting point for your 9x9 Sudoku game in Python.

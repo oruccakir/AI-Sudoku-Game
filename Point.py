@@ -8,7 +8,7 @@ class Point:
         self.y = y
         self.number = number
         self.square = pygame.Rect(x,y,SQUARE_WIDTH,SQUARE_WIDTH)
-        self.color = AQUA
+        self.color = WHITE
 
     def __str__(self):
         return f"{self.x}, {self.y}"
